@@ -1,15 +1,33 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
-  ],
-  "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarBackgroundColor": "#ffffff"
-  },
-  "style": "v2",
-  "componentFramework": "glass-easel",
-  "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+    "entryPagePath": "pages/index/index",
+    "pages": [
+        "pages/index/index",
+        "pages/aboutme/aboutme"
+    ],
+    "window": {
+        "navigationBarTitleText": "你好世界",
+        "navigationBarBackgroundColor": "#f3514f",
+        "enablePullDownRefresh": true,
+        "backgroundColor": "#efefef"
+    },
+
+    "tabBar": {
+        "list": [
+            {
+                "text": "首页",
+                "pagePath": "pages/index/index",
+                "iconPath": "assets/tabbar/home.png",
+                "selectedIconPath": "assets/tabbar/home.png"
+            },{
+                "text": "我的",
+                "pagePath": "pages/aboutme/aboutme",
+                "iconPath": "assets/tabbar/aboutme.png",
+                "selectedIconPath": "assets/tabbar/aboutme.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "componentFramework": "glass-easel",
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents"
 }
