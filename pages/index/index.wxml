@@ -1,6 +1,23 @@
-<!--index.wxml-->
-<scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
-    Hello World Weixin
-  </view>
-</scroll-view>
+
+<!-- 轮播图 -->
+<view class="swiper">
+    <swiper autoplay interval="2000" indicator-dots circular>
+        <swiper-item>
+            <image src="../../assets/swiper/photo_1.jpg" mode="aspectFit" show-menu-by-longpress />
+        </swiper-item>
+        <swiper-item>
+            <image src="../../assets/swiper/photo_2.jpg" mode="aspectFit" show-menu-by-longpress />
+        </swiper-item>
+        <swiper-item>
+            <image src="../../assets/swiper/photo_3.jpg" mode="aspectFit" show-menu-by-longpress />
+        </swiper-item>
+    </swiper>
+</view>
+
+<view></view>
+
+<view></view>
+
+<view></view>
+
+
