@@ -1,0 +1,36 @@
+<!--pages/calc/calc.wxml-->
+<view class="result">
+    <view class="result-num">Result: {{result}}</view>
+</view>
+
+<view class="btns">
+    <view>
+        <view hover-class="bg" bind:tap="resetBtn">Cancel</view>
+        <view hover-class="bg" bind:tap="delBtn">Delete</view>
+        <view hover-class="bg" bind:tap="opBtn" data-val="%">%</view>
+        <view hover-class="bg" bind:tap="opBtn" data-val="/">/</view>
+    </view>
+    <view>
+        <view hover-class="bg" bind:tap="numBtn" data-val="7">7</view>
+        <view hover-class="bg" bind:tap="numBtn" data-val="8">8</view>
+        <view hover-class="bg" bind:tap="numBtn" data-val="9">9</view>
+        <view hover-class="bg" bind:tap="opBtn" data-val="*">*</view>
+    </view>
+    <view>
+        <view hover-class="bg" bind:tap="numBtn" data-val="4">4</view>
+        <view hover-class="bg" bind:tap="numBtn" data-val="5">5</view>
+        <view hover-class="bg" bind:tap="numBtn" data-val="6">6</view>
+        <view hover-class="bg" bind:tap="opBtn" data-val="-">-</view>
+    </view>
+    <view>
+        <view hover-class="bg" bind:tap="numBtn" data-val="1">1</view>
+        <view hover-class="bg" bind:tap="numBtn" data-val="2">2</view>
+        <view hover-class="bg" bind:tap="numBtn" data-val="3">3</view>
+        <view hover-class="bg" bind:tap="opBtn" data-val="+">+</view>
+    </view>
+    <view>
+        <view hover-class="bg" bind:tap="numBtn" data-val="0">0</view>
+        <view hover-class="bg" bind:tap="dotBtn">.</view>
+        <view hover-class="bg" bind:tap="opBtn" data-val="=">=</view>
+    </view>
+</view>

@@ -2,7 +2,9 @@
     "entryPagePath": "pages/index/index",
     "pages": [
         "pages/index/index",
-        "pages/aboutme/aboutme"
+        "pages/examples/examples",
+        "pages/aboutme/aboutme",
+        "pages/calc/calc"
     ],
     "window": {
         "navigationBarTitleText": "你好世界",
@@ -18,6 +20,11 @@
                 "pagePath": "pages/index/index",
                 "iconPath": "assets/tabbar/home.png",
                 "selectedIconPath": "assets/tabbar/home.png"
+            },{
+                "text": "示例",
+                "pagePath": "pages/examples/examples",
+                "iconPath": "assets/tabbar/examples.png",
+                "selectedIconPath": "assets/tabbar/examples.png"
             },{
                 "text": "我的",
                 "pagePath": "pages/aboutme/aboutme",

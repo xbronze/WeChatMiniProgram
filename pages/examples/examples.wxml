@@ -1,0 +1,12 @@
+<!--pages/examples/examples.wxml-->
+
+<view class="container">  
+  <view class="option-list">  
+    <block wx:for="{{options}}" wx:key="id">  
+      <view class="option-item" bindtap="onOptionTap" data-id="{{item.id}}">  
+        <text>{{item.name}}</text>  
+        <text class="description">{{item.description}}</text>  
+      </view>  
+    </block>  
+  </view>  
+</view>
