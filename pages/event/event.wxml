@@ -1,0 +1,13 @@
+<!--pages/event/event.wxml-->
+
+<view>
+    <view class="view_class1" bindtap="oneParentHandler" data-parent-id="1" data-parent-name="张三他爸">
+        <button type="primary" bind:tap="oneHandler" data-id="1.1" data-name="张三">data-* 方式事件传参</button>
+    </view>
+
+    <view class="view_class2" bindtap="twoParentHandler" mark:parent-id="2" mark:parent-name="李四他爸">
+        <button type="warn" bind:tap="twoHandler" mark:id="2.1" mark:name="李四">mark:* 方式事件传参</button>
+    </view>
+
+   
+</view>

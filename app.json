@@ -4,7 +4,8 @@
         "pages/index/index",
         "pages/examples/examples",
         "pages/aboutme/aboutme",
-        "pages/calc/calc"
+        "pages/calc/calc",
+        "pages/event/event"
     ],
     "window": {
         "navigationBarTitleText": "你好世界",

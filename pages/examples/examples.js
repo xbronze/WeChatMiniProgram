@@ -8,7 +8,7 @@ Page({
     options: [  
         { id: 1, name: '数值比较', description: '比较输入的两个数值的大小'},  
         { id: 2, name: '计算器', description: '一个微型计算器', path: '/pages/calc/calc' },  
-        { id: 3, name: '功能3', description: '这是一个示例功能3'},  
+        { id: 3, name: '事件传参', description: '两种事件传参示例演示', path: '/pages/event/event' },  
         // 可以继续添加更多功能  
       ]
   },
