@@ -65,6 +65,12 @@
         latitude="{{latitude}}"
         longitude="{{longitude}}"
       >
-        <cover-view class="coverItem"></cover-view>
+        <cover-view class="coverItem" >
+            <scroll-view scroll-y style="height: 300rpx;">
+                <view class="scroll-item" style="height: 100px;" wx:for="{{items}}" wx:key="index">  
+                    Item {{index + 1}}  
+                </view>  
+            </scroll-view>
+        </cover-view>
       </map>
 </view>
