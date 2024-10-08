@@ -1,0 +1,70 @@
+<!--pages/components/components.wxml-->
+
+<!-- 基础视图view -->
+<view class="basicView">
+    ===视图容器view的简单使用===
+    <view hover-class="view1">我是父容器view
+        <!-- 子view -->
+        <view hover-class="view2">我是子容器view</view>
+    </view>
+</view>
+
+<view class="line"></view>
+
+<!-- 滚动视图 scroll-view -->
+<view class="scrollView">
+    ==横向滚动====
+    <scroll-view class="scroll-x" scroll-x>
+        <view>第1页</view>
+        <view>第2页</view>
+        <view>第3页</view>
+    </scroll-view>
+
+
+    ==纵向滚动====
+    <scroll-view class="scroll-y" scroll-y>
+        <view>第1页</view>
+        <view>第2页</view>
+        <view>第3页</view>
+    </scroll-view>
+</view>
+
+
+<view class="line"></view>
+
+
+<!-- 滑块视图swiper - 轮播图 -->
+<view class="swiperView">
+    ===视图容器swiper的简单应用===
+    <swiper autoplay interval="2000">
+        <swiper-item>第1页</swiper-item>
+        <swiper-item>第2页</swiper-item>
+        <swiper-item>第3页</swiper-item>
+    </swiper>
+</view>
+
+<view class="line"></view>
+
+
+<!-- 可移动视图movable-view - 轮播图 -->
+<view class="movView">
+    ===视图容器movable-view的简单应用===
+    <movable-area scale-area>
+        <movable-view direction="all" inertia></movable-view>
+    </movable-area>
+</view>
+
+
+<view class="line"></view>
+
+<!-- 可覆盖视图cover-view -->
+<view class="coverView">
+    ===视图容器movable-view的简单应用===
+    <map
+        style="width: 100%; height: 300px;"
+        latitude="{{latitude}}"
+        longitude="{{longitude}}"
+      >
+        <cover-view class="coverItem"></cover-view>
+      </map>
+</view>
