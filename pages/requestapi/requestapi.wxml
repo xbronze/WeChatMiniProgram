@@ -1,0 +1,5 @@
+<!--pages/requestapi/requestapi.wxml-->
+
+<button style="margin-top: 50rpx;" type="primary" bind:tap="getData">获取数据</button>
+
+<view style="text-align: center; margin-top: 50rpx; border: 2rpx solid;">{{result}}</view>

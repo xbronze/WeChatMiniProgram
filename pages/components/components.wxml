@@ -5,7 +5,7 @@
     ===视图容器view的简单使用===
     <view hover-class="view1">我是父容器view
         <!-- 子view -->
-        <view hover-class="view2">我是子容器view</view>
+        <view hover-class="view2" hover-stop-propagation>我是子容器view</view>
     </view>
 </view>
 
@@ -33,13 +33,14 @@
 <view class="line"></view>
 
 
-<!-- 滑块视图swiper - 轮播图 -->
+<!-- 滑块视图swiper - 轮播图 autoplay interval="2000"-->
 <view class="swiperView">
     ===视图容器swiper的简单应用===
-    <swiper autoplay interval="2000">
+    <swiper autoplay interval="2000" indicator-dots>
         <swiper-item>第1页</swiper-item>
         <swiper-item>第2页</swiper-item>
         <swiper-item>第3页</swiper-item>
+        <swiper-item>第4页</swiper-item>
     </swiper>
 </view>
 
@@ -50,7 +51,7 @@
 <view class="movView">
     ===视图容器movable-view的简单应用===
     <movable-area scale-area>
-        <movable-view direction="all" inertia></movable-view>
+        <movable-view direction="all" inertia out-of-bounds></movable-view>
     </movable-area>
 </view>
 
@@ -65,12 +66,12 @@
         latitude="{{latitude}}"
         longitude="{{longitude}}"
       >
-        <cover-view class="coverItem" >
-            <scroll-view scroll-y style="height: 300rpx;">
+        <view class="coverItem" >
+            <scroll-view scroll-y style="height: 300rpx;" scroll-top="300rpx">
                 <view class="scroll-item" style="height: 100px;" wx:for="{{items}}" wx:key="index">  
                     Item {{index + 1}}  
                 </view>  
             </scroll-view>
-        </cover-view>
+        </view>
       </map>
 </view>
