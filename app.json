@@ -7,7 +7,8 @@
         "pages/calc/calc",
         "pages/event/event",
         "pages/components/components",
-        "pages/requestapi/requestapi"
+        "pages/requestapi/requestapi",
+        "pages/investigate/investigate"
     ],
     "window": {
         "navigationBarTitleText": "你好世界",

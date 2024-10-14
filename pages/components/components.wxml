@@ -1,5 +1,32 @@
 <!--pages/components/components.wxml-->
 
+<view class="line" style="text-align: center;">===表单组件===</view>
+
+<view>
+    <button open-type="feedback">获取用户信息</button>
+</view>
+
+<view>
+    <input type="idcard" />
+</view>
+
+
+
+<view class="line" style="text-align: center;">===进度条===</view>
+
+<view>
+    <progress percent="30" stroke-width="30" border-radius="10"></progress>
+</view>
+
+
+<view class="line" style="text-align: center;">===富文本===</view>
+
+<view>
+    <rich-text nodes='{{nodes}}'></rich-text>
+</view>
+
+<view class="line"></view>
+
 <!-- 基础视图view -->
 <view class="basicView">
     ===视图容器view的简单使用===
@@ -75,3 +102,15 @@
         </view>
       </map>
 </view>
+
+
+<view class="line" style="text-align: center;">===图标===</view>
+
+<view>
+    
+    <block wx:for="{{ iconColor }}" wx:key="*this">
+        <icon type="info" color="{{ item }}" size="60"></icon>
+    </block>
+</view>
+
+

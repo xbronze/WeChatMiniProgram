@@ -1,0 +1,38 @@
+<!--pages/investigate/investigate.wxml-->
+<!-- <text>pages/investigate/investigate.wxml</text> -->
+
+<view class="container">
+    <form bindsubmit="submit">
+        <view>
+            <text>姓名：</text>
+            <input type="text" name="username" value="{{username}}"/>
+        </view>
+        <view>
+            <text>性别：</text>
+            <radio-group name="gender">
+                <!-- <label><radio value="0" checked />男</label>
+                <label><radio value="1" />女</label>
+                <label><radio value="2" />其他</label> -->
+                <label wx:for="{{gender}}" wx:key="value">
+                    <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+                </label>
+            </radio-group>
+        </view>
+        <view>
+            <text>爱好：</text>
+            <checkbox-group name="hobbies">
+                <!-- <label><checkbox value="sing" />唱</label>
+                <label><checkbox value="dance" />跳</label>
+                <label><checkbox value="rap" />Rap</label> -->
+                <label wx:for="{{hobbies}}" wx:key="value">
+                    <checkbox value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+                </label>
+            </checkbox-group>
+        </view>
+        <view>
+            <text>个人评价：</text>
+            <textarea name="evaluation" value="{{evaluation}}"/>
+        </view>
+        <button form-type="submit">提交</button>
+    </form>
+</view>

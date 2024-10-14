@@ -10,7 +10,8 @@ Page({
         { id: 2, name: '计算器', description: '一个微型计算器', path: '/pages/calc/calc' },  
         { id: 3, name: '事件传参', description: '两种事件传参示例演示', path: '/pages/event/event' },  
         { id: 4, name: '组件', description: '小程序组件示例', path: '/pages/components/components' },
-        { id: 5, name: '网络API', description: '网络请求示例', path: '/pages/requestapi/requestapi' }
+        { id: 5, name: '网络API', description: '网络请求示例', path: '/pages/requestapi/requestapi' },
+        { id: 6, name: '微调查', description: '用户调查问卷', path: '/pages/investigate/investigate' }
         // 可以继续添加更多功能  
       ]
   },
