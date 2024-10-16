@@ -22,7 +22,8 @@ Page({
   submit:function(e) {
       console.log(JSON.stringify(e.detail.value))
       wx.request({
-        url: 'http://10.6.232.141:8080/miniProgram/InvestigateServlet',
+        // url: 'http://10.6.232.141:8080/miniProgram/InvestigateServlet',
+        url: 'http://localhost:8080/demo111/testServlet',
         method: "post",
         data: JSON.stringify(e.detail.value),
         header: {

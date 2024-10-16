@@ -1,0 +1,25 @@
+
+<view class="cates">
+
+  <view class="cates_container">
+	<scroll-view scroll-y class="left">
+		<view class="classify_sidebar_class {{index == active ? 'classify_active' : ''}}" 
+		wx:for="{{list}}" 
+		wx:key="{{item.id}}"
+		data-index="{{index}}"
+		bind:tap="handleMenuItemChange">
+			{{item.name}}
+		</view>
+	</scroll-view>
+
+	<scroll-view scroll-y class="right">
+    <block wx:for="{{list[active].child}}" wx:key="*this">
+      <view class="child_class">
+        <view>{{item.title}}</view>
+        <view>{{item.desc}}</view>
+      </view>
+    </block>
+	</scroll-view>
+
+  </view>
+</view>

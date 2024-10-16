@@ -6,9 +6,9 @@
         "pages/aboutme/aboutme",
         "pages/calc/calc",
         "pages/event/event",
-        "pages/components/components",
         "pages/requestapi/requestapi",
-        "pages/investigate/investigate"
+        "pages/investigate/investigate",
+        "pages/category/category"
     ],
     "window": {
         "navigationBarTitleText": "你好世界",
@@ -40,5 +40,8 @@
     "style": "v2",
     "componentFramework": "glass-easel",
     "sitemapLocation": "sitemap.json",
-    "lazyCodeLoading": "requiredComponents"
+    "lazyCodeLoading": "requiredComponents",
+    "usingComponents": {
+        "custom-checkbox": "./components/custom-checkbox/custom-checkbox"
+    }
 }

@@ -3,13 +3,13 @@
 <view class="swiper">
     <swiper autoplay interval="2000" indicator-dots circular>
         <swiper-item>
-            <image src="../../assets/swiper/photo_1.jpg" mode="aspectFit" show-menu-by-longpress />
+            <image src="../../assets/swiper/photo_1.jpg" mode="aspectFill" show-menu-by-longpress />
         </swiper-item>
         <swiper-item>
-            <image src="../../assets/swiper/photo_2.jpg" mode="aspectFit" show-menu-by-longpress />
+            <image src="../../assets/swiper/photo_2.jpg" mode="aspectFill" show-menu-by-longpress />
         </swiper-item>
         <swiper-item>
-            <image src="../../assets/swiper/photo_3.jpg" mode="aspectFit" show-menu-by-longpress />
+            <image src="../../assets/swiper/photo_3.jpg" mode="aspectFill" show-menu-by-longpress />
         </swiper-item>
     </swiper>
 </view>
@@ -55,8 +55,10 @@
     </scroll-view>
 </view>
 
-<view></view>
 
-<view></view>
+
+<view>
+    <custom-checkbox label="我已阅读并同意 用户协议 和 隐私协议" position="right" checked="{{isChecked}}"/>
+</view>
 
 

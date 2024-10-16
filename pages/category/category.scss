@@ -1,0 +1,42 @@
+/* pages/category/category.wxss */
+
+page {
+  height: 100%;
+}
+
+.cate {
+  height: 100%;
+  
+}
+
+.cates_container {
+  height: 100vh;
+  display: flex;
+}
+
+.left {
+  flex: 2;
+  background-color: #efefef;
+}
+
+.right {
+  flex: 5;
+  background-color: seashell;
+}
+
+
+
+.classify_sidebar_class {
+  height: 100rpx;
+  margin-bottom: 50rpx;
+  border: 2rpx solid red;
+}
+
+.classify_active {
+  background-color: sienna;
+}
+
+
+.child_class {
+  height: 200rpx;
+}

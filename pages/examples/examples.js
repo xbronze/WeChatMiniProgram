@@ -9,7 +9,7 @@ Page({
         { id: 1, name: '数值比较', description: '比较输入的两个数值的大小'},  
         { id: 2, name: '计算器', description: '一个微型计算器', path: '/pages/calc/calc' },  
         { id: 3, name: '事件传参', description: '两种事件传参示例演示', path: '/pages/event/event' },  
-        { id: 4, name: '组件', description: '小程序组件示例', path: '/pages/components/components' },
+        { id: 4, name: '分类页', description: '两级分类页面的切换演示', path: '/pages/category/category' },  
         { id: 5, name: '网络API', description: '网络请求示例', path: '/pages/requestapi/requestapi' },
         { id: 6, name: '微调查', description: '用户调查问卷', path: '/pages/investigate/investigate' }
         // 可以继续添加更多功能  

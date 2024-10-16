@@ -1,0 +1,17 @@
+/* components/custom-checkbox.wxss */
+
+
+.custom-checkbox-box {
+    display: flex;
+    align-items: center;
+}
+
+
+.custom-checkbox-box.left {
+    flex-direction: row-reverse;
+}
+
+
+.custom-checkbox-box.right {
+    flex-direction: row;
+}

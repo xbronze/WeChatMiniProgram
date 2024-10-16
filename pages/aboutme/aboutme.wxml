@@ -1,2 +1,33 @@
-<!--pages/aboutme/aboutme.wxml-->
-<text>pages/aboutme/aboutme.wxml</text>
+<view>
+  
+  <view style="border: 2rpx solid red; height: 200rpx; margin-top: 50rpx;"> 
+    <text>滑动选择器：picker（多列选择器）</text>
+    <picker mode="multiSelector" range="{{multiSelectorItems}}" bindchange="multiSelectorChange">
+      <view>当前选择：{{result}}</view>
+    </picker>
+  </view>
+
+
+  <view style="border: 2rpx solid red; height: 450rpx; margin-top: 50rpx">
+  <text>嵌入滚动选择器：picker-view</text>
+    <picker-view style="height: 350rpx" bindchange="pickerViewChange">
+      <picker-view-column>
+        <view wx:for="{{year}}" wx:key="*this">{{item}}</view>
+      </picker-view-column>
+
+      <picker-view-column>
+        <view wx:for="{{month}}" wx:key="*this">{{item}}</view>
+      </picker-view-column>
+
+      <picker-view-column>
+        <view wx:for="{{day}}" wx:key="*this">{{item}}</view>
+      </picker-view-column>
+
+      
+    </picker-view>
+
+    <view>当前选择的是：{{result2}}</view>
+  </view>
+
+
+</view>
