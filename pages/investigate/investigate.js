@@ -20,20 +20,36 @@ Page({
   },
 
   submit:function(e) {
+
+      wx.showLoading({
+        title: '接口请求中',
+        mask: true
+      })
+
       console.log(JSON.stringify(e.detail.value))
       wx.request({
-        // url: 'http://10.6.232.141:8080/miniProgram/InvestigateServlet',
-        url: 'http://localhost:8080/demo111/testServlet',
+        url: 'http://10.6.232.141:8080/miniProgram/investigate/add2',
         method: "post",
         data: JSON.stringify(e.detail.value),
+        // data: e.detail.value,
         header: {
             'Content-type': 'application/json'
+            // 'Content-type': 'application/x-www-form-urlencoded'
         },
-        success:function(res) {
-            console.log('success', res)
+        success:(res) => {
+          console.log('success', res)
+          if(res.data.code === 200) {
+            this.setData({data: res.data.data})
+            this.setData({msg: res.data.msg})
+          }
+            
         },
-        fail:function(res) {
+        fail:(res) => {
             console.log('fail', res)
+        },
+        complete:(res) => {
+          console.log('complete:', res)
+          wx.hideLoading()
         }
       })
   }

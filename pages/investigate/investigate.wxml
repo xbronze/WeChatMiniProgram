@@ -36,3 +36,8 @@
         <button form-type="submit">提交</button>
     </form>
 </view>
+
+<view>
+  <view>data: {{data}}</view>
+  <view>msg: {{msg}}</view>
+</view>
