@@ -1,4 +1,19 @@
 <view>
+  <view style="border: 2rpx solid red;">
+    <textarea placeholder="请输入"></textarea>
+  </view>
+</view>
+
+
+
+<view>
+
+  <view style="border: 2rpx solid red; height: 200rpx; margin-top: 50rpx;">
+    <text>滑动选择器：picker（单列选择器）</text>
+    <picker mode="selector" range="{{selectorItems}}">
+      <view>当前选择的是：</view>
+    </picker>
+  </view>
   
   <view style="border: 2rpx solid red; height: 200rpx; margin-top: 50rpx;"> 
     <text>滑动选择器：picker（多列选择器）</text>
@@ -7,6 +22,26 @@
     </picker>
   </view>
 
+  <view style="border: 2rpx solid red; height: 200rpx; margin-top: 50rpx;">
+    <text>滑动选择器：picker（时间选择器）</text>
+    <picker mode="time">
+      <view>当前选择的是：</view>
+    </picker>
+  </view>
+
+  <view style="border: 2rpx solid red; height: 200rpx; margin-top: 50rpx;">
+    <text>滑动选择器：picker（日期选择器）</text>
+    <picker mode="date">
+      <view>当前选择的是：</view>
+    </picker>
+  </view>
+
+  <view style="border: 2rpx solid red; height: 200rpx; margin-top: 50rpx;">
+    <text>滑动选择器：picker（省市区选择器）</text>
+    <picker mode="region">
+      <view>当前选择的是：</view>
+    </picker>
+  </view>
 
   <view style="border: 2rpx solid red; height: 450rpx; margin-top: 50rpx">
   <text>嵌入滚动选择器：picker-view</text>
@@ -30,4 +65,5 @@
   </view>
 
 
+  
 </view>
