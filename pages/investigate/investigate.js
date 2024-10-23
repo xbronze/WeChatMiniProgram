@@ -16,11 +16,17 @@ Page({
         {name: "跳", value: "dance", checked: true},
         {name: "Rap", value: "rap", checked: true}
     ],
-    evaluation: "我不是小黑子"
+    address: "河南省信阳市浉河区长安路237号",
+    selectorItems: [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+  },
+
+  pickerHandler(e) {
+    this.setData({pickerValue: this.data.selectorItems[e.detail.value]})
   },
 
   submit:function(e) {
-
+      const index = e.detail.value.age
+      e.detail.value.age = this.data.selectorItems[index]
       wx.showLoading({
         title: '接口请求中',
         mask: true
@@ -28,7 +34,7 @@ Page({
 
       console.log(JSON.stringify(e.detail.value))
       wx.request({
-        url: 'http://10.6.232.141:8080/miniProgram/investigate/add2',
+        url: 'http://localhost:8080/chapter7experiment/questionnaire/add',
         method: "post",
         data: JSON.stringify(e.detail.value),
         // data: e.detail.value,
@@ -38,11 +44,6 @@ Page({
         },
         success:(res) => {
           console.log('success', res)
-          if(res.data.code === 200) {
-            this.setData({data: res.data.data})
-            this.setData({msg: res.data.msg})
-          }
-            
         },
         fail:(res) => {
             console.log('fail', res)

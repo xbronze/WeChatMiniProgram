@@ -10,34 +10,32 @@
         <view>
             <text>性别：</text>
             <radio-group name="gender">
-                <!-- <label><radio value="0" checked />男</label>
-                <label><radio value="1" />女</label>
-                <label><radio value="2" />其他</label> -->
                 <label wx:for="{{gender}}" wx:key="value">
                     <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
                 </label>
             </radio-group>
         </view>
         <view>
+          <picker range="{{selectorItems}}" bindchange="pickerHandler" name="age">
+            <view style="border-bottom: 2rpx solid #ccc;">年龄：{{pickerValue}}</view>
+          </picker>
+        </view>
+        <view>
+            <text>个人住址：</text>
+            <textarea name="address" value="{{address}}"/>
+        </view>
+        <view>
+          <switch name="work">是否参加工作：</switch>
+        </view>
+        <view>
             <text>爱好：</text>
             <checkbox-group name="hobbies">
-                <!-- <label><checkbox value="sing" />唱</label>
-                <label><checkbox value="dance" />跳</label>
-                <label><checkbox value="rap" />Rap</label> -->
                 <label wx:for="{{hobbies}}" wx:key="value">
                     <checkbox value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
                 </label>
             </checkbox-group>
         </view>
-        <view>
-            <text>个人评价：</text>
-            <textarea name="evaluation" value="{{evaluation}}"/>
-        </view>
-        <button form-type="submit">提交</button>
+        
+        <button type="primary" form-type="submit">提交</button>
     </form>
-</view>
-
-<view>
-  <view>data: {{data}}</view>
-  <view>msg: {{msg}}</view>
 </view>

@@ -1,0 +1,11 @@
+<view>
+  <image src="{{imageSrc}}" />
+</view>
+<view style="margin: 50rpx auto;">
+	<button type="primary" bind:tap="uploadHandler">上传文件</button>
+</view>
+
+
+<view style="margin: 50rpx auto;">
+	<button type="warn" bind:tap="downloadHandler">下载文件</button>
+</view>
