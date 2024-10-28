@@ -12,7 +12,8 @@ Page({
         { id: 4, name: '分类页', description: '两级分类页面的切换演示', path: '/pages/category/category' },  
         { id: 5, name: '网络API', description: '网络请求示例', path: '/pages/requestapi/requestapi' },
         { id: 6, name: '文件上传和下载', description: '文件上传和下载', path: '/pages/file/file' },
-        { id: 7, name: '微调查', description: '用户调查问卷', path: '/pages/investigate/investigate' }
+        { id: 7, name: '微调查', description: '用户调查问卷', path: '/pages/investigate/investigate' },
+        { id: 8, name: '组件', description: '小程序组件', path: '/pages/compon/compon' }
         // 可以继续添加更多功能  
       ]
   },
@@ -27,61 +28,6 @@ Page({
         })
     }
     
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
   }
+  
 })

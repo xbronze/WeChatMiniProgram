@@ -1,4 +1,4 @@
-<view>
+<view wx:if="{{imageSrc}}">
   <image src="{{imageSrc}}" />
 </view>
 <view style="margin: 50rpx auto;">

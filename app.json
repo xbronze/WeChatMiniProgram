@@ -9,7 +9,8 @@
         "pages/requestapi/requestapi",
         "pages/investigate/investigate",
         "pages/file/file",
-        "pages/category/category"
+        "pages/category/category",
+        "pages/compon/compon"
     ],
     "window": {
         "navigationBarTitleText": "你好世界",
