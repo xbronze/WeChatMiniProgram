@@ -10,7 +10,8 @@
         "pages/investigate/investigate",
         "pages/file/file",
         "pages/category/category",
-        "pages/compon/compon"
+        "pages/compon/compon",
+        "pages/media/media"
     ],
     "window": {
         "navigationBarTitleText": "你好世界",

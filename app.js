@@ -1,6 +1,7 @@
 // app.js
 App({
   onLaunch() {
+    /**
     this.checkLogin(res => {
       console.log('is_login:', res.is_login)
       if(!res.is_login) {
@@ -27,7 +28,7 @@ App({
         }
       }
     })
-    
+     */
   },
 
   checkLogin(callback) {

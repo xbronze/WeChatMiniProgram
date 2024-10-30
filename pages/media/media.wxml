@@ -1,0 +1,61 @@
+<view class="container" >
+
+  <view>========图片管理========</view>
+  
+  <view style="margin-top: 20rpx;" >
+    <image src="{{img_url}}" style="height: 200rpx;"  mode="heightFix" bind:tap="checkImg" data-url="{{img_url}}"/>
+  </view>
+
+  <view style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+    <button size="mini" type="primary" plain bind:tap="chooseImg">选择图片</button>
+    <button size="mini" type="warn" plain bind:tap="saveImg">保存图片</button>
+  </view>
+</view>
+
+<view class="container" >
+
+<view>========录音管理========</view>
+  <view>{{record_file}}</view>
+  <view style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+    <button size="mini" type="primary" plain bind:tap="startRecord">开始录音</button>
+    <button size="mini" type="warn" plain bind:tap="stopRecord">停止录音</button>
+    <button size="mini" type="primary" plain bind:tap="recordPlay">播放录音</button>
+  </view>
+</view>
+
+<view class="container" style="height: 600rpx;" >
+
+  <view>========视频管理========</view>
+  <view>
+    <button type="default" plain bind:tap="selectVideo">选择视频</button>
+  </view>
+  <view>
+    <video id="myVideo" src="{{video_file}}" />
+  </view>
+  <view style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+    <button size="mini" type="primary" plain bind:tap="bindPlayVideo">视频播放</button>
+    <button size="mini" type="warn" plain bind:tap="bindPauseVideo">暂停视频</button>
+    <button size="mini" type="primary" plain bind:tap="bindSaveVideo">保存视频</button>
+  </view>
+</view>
+
+
+<view class="container" style="height: 1200rpx;" >
+
+<view>========相机管理========</view>
+  <camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px;"></camera>
+  <view style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+    <button size="mini" type="primary" plain bind:tap="takePhoto">拍照</button>
+    <button size="mini" type="primary" plain bind:tap="takeVideo">开始录像</button>
+    <button size="mini" type="primary" plain bind:tap="stopTakeVideo">停止录像</button>
+  </view>
+
+  <view wx:if="{{camera_src != null}}">
+    <image  mode="widthFix" src="{{camera_src}}"></image> 
+  </view>
+  
+
+  <view wx:if="{{camera_video != null}}">
+    <video id="myVideo" src="{{camera_video}}" />
+  </view>
+</view>

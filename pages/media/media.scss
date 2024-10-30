@@ -1,0 +1,12 @@
+/* pages/media/media.wxss */
+
+.container {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  margin-top: 50rpx;
+  border: 5rpx solid red;
+  width: 99%;
+  height: 400rpx;
+}

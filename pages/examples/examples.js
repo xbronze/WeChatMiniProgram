@@ -13,7 +13,8 @@ Page({
         { id: 5, name: '网络API', description: '网络请求示例', path: '/pages/requestapi/requestapi' },
         { id: 6, name: '文件上传和下载', description: '文件上传和下载', path: '/pages/file/file' },
         { id: 7, name: '微调查', description: '用户调查问卷', path: '/pages/investigate/investigate' },
-        { id: 8, name: '组件', description: '小程序组件', path: '/pages/compon/compon' }
+        { id: 8, name: '组件', description: '小程序组件', path: '/pages/compon/compon' },
+        { id: 9, name: '多媒体API', description: '多媒体API', path: '/pages/media/media' }
         // 可以继续添加更多功能  
       ]
   },
