@@ -1,5 +1,5 @@
-<view wx:if="{{imageSrc}}">
-  <image src="{{imageSrc}}" />
+<view wx:if="{{tempFilePath}}">
+  <image src="{{tempFilePath}}" />
 </view>
 <view style="margin: 50rpx auto;">
 	<button type="primary" bind:tap="uploadHandler">上传文件</button>
@@ -8,4 +8,28 @@
 
 <view style="margin: 50rpx auto;">
 	<button type="warn" bind:tap="downloadHandler">下载文件</button>
+</view>
+
+<view style="margin: 50rpx auto;">
+	<button type="primary" bind:tap="getFileInfoHandler">获取临时文件的信息</button>
+</view>
+
+<view style="margin: 50rpx auto;">
+	<button type="warn" bind:tap="getSaveFileListHandler">获取保存的文件列表</button>
+</view>
+
+<view style="margin: 50rpx auto;">
+	<button type="primary" bind:tap="saveFileHandler">保存文件</button>
+</view>
+
+<view style="margin: 50rpx auto;">
+	<button type="warn" bind:tap="getSaveFileInfoHandler">获取保存文件的信息</button>
+</view>
+
+<view style="margin: 50rpx auto;">
+	<button type="primary" bind:tap="removeSavedFileHandler">删除本地文件</button>
+</view>
+
+<view style="margin: 50rpx auto;">
+	<button type="warn" bind:tap="openDocumentHandler">打开本地文件</button>
 </view>
