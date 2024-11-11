@@ -11,7 +11,8 @@
         "pages/file/file",
         "pages/category/category",
         "pages/compon/compon",
-        "pages/media/media"
+        "pages/media/media",
+        "pages/memo/memo"
     ],
     "window": {
         "navigationBarTitleText": "你好世界",

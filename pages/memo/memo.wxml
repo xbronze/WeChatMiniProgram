@@ -1,0 +1,36 @@
+<view class="container">
+
+
+
+  <view class="todo-list">
+    <block wx:for="{{todos}}" wx:key="index">
+      <view class="todo-item">
+        <text>{{item}}</text>
+        <button size="mini" bindtap="removeTodo" data-index="{{index}}">删除</button>
+      </view>
+    </block>
+  </view>
+
+
+
+  <view class="toast-box" hidden="{{hidden}}">
+    <view class='showToast'>
+        <view class='toast-title'>
+            <text>请输入您的代办内容</text>
+        </view>
+        <view class='toast-main'>
+            <view class='toast-input'>
+                <input placeholder='请输入姓名' bindinput='setValue' value="{{inputVal}}"></input>
+            </view>
+        </view>
+        <view class='toast-button'>
+            <button size="mini" bind:tap='cancel'>取消</button>
+            <button size="mini" bind:tap='confirm'>确定</button>
+        </view>
+    </view>
+  </view>
+
+
+  <!-- 其他页面内容 -->
+  <button class="add-button" bindtap="handleAddTap">+</button>
+</view>

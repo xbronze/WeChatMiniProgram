@@ -1,0 +1,89 @@
+/* pages/memo/memo.wxss */
+
+page {
+  background-color: rgb(242,242,242);
+}
+
+.toast-box {
+  position: fixed;
+  z-index: 1000; /* 确保弹框在最上层 */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showToast {
+  padding: 20px;
+  background-color: rgb(255, 255, 255); /* 白色背景 */
+  border-radius: 5px; /* 圆角边框 */
+}
+
+.toast-title {
+  text-align: center;
+}
+
+.toast-input {
+  margin: 20rpx 0;
+
+  input {
+    width: 90%; /* 输入框宽度 */
+    padding: 8px; /* 内边距 */
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 5px; /* 圆角边框 */
+  }
+}
+
+.toast-button {
+  display: flex;
+}
+
+// .container {
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+//   padding: 20rpx;
+//   box-sizing: border-box;
+// }
+
+/* 设置加号按钮的样式和位置 */
+.add-button {
+  position: fixed;
+  bottom: 20rpx;
+  right: 20rpx;
+  width: 30rpx;
+  align-items: center;
+  background-color: skyblue;
+  color: white;
+}
+
+
+.todo-list {
+  margin: 10px;
+}
+ 
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+
+
+  text {
+    flex: 1; /* 输入框占据剩余空间 */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px; /* 与按钮之间的间距 */
+  }
+
+  button {
+    background-color: #1aad19;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: auto; /* 将按钮推至最右边 */
+  }
+}
