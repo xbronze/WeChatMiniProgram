@@ -11,9 +11,13 @@ Page({
   },
 
   onLoad() {
+    let todos = wx.getStorageSync('todos');
+    if (!Array.isArray(todos)) {
+      todos = []; // 如果不是数组，则初始化为空数组
+    }
     this.setData({
-      todos: wx.getStorageSync('todos')
-    })
+      todos: todos
+    });
   },
 
   // 处理输入事件
