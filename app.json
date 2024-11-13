@@ -12,7 +12,8 @@
         "pages/category/category",
         "pages/compon/compon",
         "pages/media/media",
-        "pages/memo/memo"
+        "pages/memo/memo",
+        "pages/position/position"
     ],
     "window": {
         "navigationBarTitleText": "你好世界",
@@ -47,5 +48,14 @@
     "lazyCodeLoading": "requiredComponents",
     "usingComponents": {
         "custom-checkbox": "./components/custom-checkbox/custom-checkbox"
+    },
+    "requiredPrivateInfos": [
+      "getLocation",
+      "chooseLocation"
+    ],
+    "permission": {
+      "scope.userLocation": {
+        "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+      }
     }
 }

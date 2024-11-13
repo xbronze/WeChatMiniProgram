@@ -15,7 +15,8 @@ Page({
         { id: 7, name: '微调查', description: '用户调查问卷', path: '/pages/investigate/investigate' },
         { id: 8, name: '组件', description: '小程序组件', path: '/pages/compon/compon' },
         { id: 9, name: '多媒体API', description: '多媒体API', path: '/pages/media/media' },
-        { id: 10, name: '备忘录', description: '使用数据缓存API实现的备忘录功能', path: '/pages/memo/memo' }
+        { id: 10, name: '备忘录', description: '使用数据缓存API实现的备忘录功能', path: '/pages/memo/memo' },
+        { id: 11, name: '位置坐标', description: '位置API实践', path: '/pages/position/position' }
         // 可以继续添加更多功能  
       ]
   },

@@ -1,0 +1,27 @@
+
+
+
+<view>
+  <map id="myMap" latitude='39.908874' longitude='116.397747'></map>
+</view>
+
+
+<view style="margin-top: 30rpx;">
+  <button type="primary" bind:tap="getCenterLocationHandler">获取中心坐标</button>
+</view>
+
+<view style="margin-top: 30rpx;">
+  <button type="warn" bind:tap="moveToLocationHandler">移动到指定为止</button>
+</view>
+
+<view style="margin-top: 30rpx;">
+  <button type="primary" bind:tap="translateMarkerHandler">移动标志</button>
+</view>
+
+<view style="margin-top: 30rpx;">
+  <button type="warn" bind:tap="includePointsHandler">缩放视野展示所有经纬度</button>
+</view>
+
+<view style="margin-top: 30rpx;">
+  <button type="primary" bind:tap="getRegionHandler">获取视野范围</button>
+</view>
