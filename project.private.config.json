@@ -2,6 +2,51 @@
   "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
   "projectname": "WeChatMiniProgram",
   "setting": {
-    "compileHotReLoad": true
+    "compileHotReLoad": true,
+    "urlCheck": false,
+    "bigPackageSizeSupport": false
+  },
+  "appid": "wxab4b987f89dc154a",
+  "libVersion": "3.6.3",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "modules/marketModule/pages/market/market",
+          "pathName": "modules/marketModule/pages/market/market",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "modules/goodModule/pages/detail/detail",
+          "pathName": "modules/goodModule/pages/detail/detail",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/cust-component/cust-component",
+          "pathName": "pages/cust-component/cust-component",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/memo/memo",
+          "pathName": "pages/memo/memo",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/position/position",
+          "pathName": "pages/position/position",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
   }
 }

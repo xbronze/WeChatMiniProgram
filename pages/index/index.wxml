@@ -38,27 +38,7 @@
                 <text>1503</text>
             </view>
         </view>
-        <view>
-            <view class="good-item">
-                <image src="../../assets/scroll/scroll4.jpg" mode=""/>
-                <text>高达4</text>
-                <text>4500</text>
-            </view>
-        </view>
-        <view>
-            <view class="good-item">
-                <image src="../../assets/scroll/scroll5.jpg" mode=""/>
-                <text>高达5</text>
-                <text>1555</text>
-            </view>
-        </view>
     </scroll-view>
-</view>
-
-
-
-<view>
-    <custom-checkbox label="我已阅读并同意 用户协议 和 隐私协议" position="right" checked="{{isChecked}}"/>
 </view>
 
 

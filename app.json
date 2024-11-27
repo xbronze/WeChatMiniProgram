@@ -3,17 +3,7 @@
     "pages": [
         "pages/index/index",
         "pages/examples/examples",
-        "pages/aboutme/aboutme",
-        "pages/calc/calc",
-        "pages/event/event",
-        "pages/requestapi/requestapi",
-        "pages/investigate/investigate",
-        "pages/file/file",
-        "pages/category/category",
-        "pages/compon/compon",
-        "pages/media/media",
-        "pages/memo/memo",
-        "pages/position/position"
+        "pages/aboutme/aboutme"
     ],
     "window": {
         "navigationBarTitleText": "你好世界",
@@ -57,5 +47,28 @@
       "scope.userLocation": {
         "desc": "你的位置信息将用于小程序位置接口的效果展示" 
       }
+    },
+    "subPackages": [
+      {
+        "root": "modules/exampleModule",
+        "name": "exampleModule",
+        "pages": [
+          "calc/calc",
+          "event/event",
+          "requestapi/requestapi",
+          "investigate/investigate",
+          "file/file",
+          "category/category",
+          "compon/compon",
+          "media/media",
+          "memo/memo",
+          "position/position",
+          "cust-component/cust-component"
+        ]
+      }
+      
+    ],
+    "preloadRule": {
+      
     }
 }
